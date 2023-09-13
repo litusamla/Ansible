@@ -10,7 +10,6 @@
 
   - name : install java on ubnuntu Redhat
     ansible.builtin.dnf:
-    apt:
        name: "{{myjavapackonRedHat}}"
        state: present
     when: ansible_os_family = "RedHat"
