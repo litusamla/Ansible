@@ -12,5 +12,5 @@
 
 [mywebserver:vars]
 myvar=value
-mywebpackonubun=apache2
-mywebpackforRedHat=httpd
+mywebpackonubun= apache2
+mywebpackforRedHat= httpd
