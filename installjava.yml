@@ -4,8 +4,8 @@
   tasks:
   - name : install java on ubnuntu nodes
     apt: 
-       name: "{{myjavapackonubuntu}}"
-       state: present
+     name: "{{myjavapackonubuntu}}"
+     state: present
     when: ansible_os_family = "Debian"
 
   - name : install java on ubnuntu Redhat
