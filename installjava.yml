@@ -1,0 +1,16 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+  - name : install java on ubnuntu nodes
+    apt: 
+       name: "{{myjavapackonubuntu}}"
+       state: present
+    when: ansible_os_family = "Debian"
+
+  - name : install java on ubnuntu Redhat
+    ansible.builtin.dnf:
+    apt:
+       name: "{{myjavapackonRedHat}}"
+       state: present
+    when: ansible_os_family = "RedHat"
