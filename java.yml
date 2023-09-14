@@ -4,8 +4,8 @@
   tasks:
    - name: i want to install webserver on ubuntu nodes
      service:
-        name: "{{myjavapackonubuntu}}"
-        state: present
+      name: "{{myjavapackonubuntu}}"
+      state: present
      when: ansible_os_family =="Debian"  
 
    - name: i want to install webserver on Redhat nodes
