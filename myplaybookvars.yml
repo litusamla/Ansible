@@ -2,8 +2,8 @@
 - host: 172.31.34.235
   become: yes
   vars:
-     myvars01: git 
-     myvars02: tree
+    myvars01: git 
+    myvars02: tree
   tasks: 
   - name: i want to display my myvars01
     debug:
