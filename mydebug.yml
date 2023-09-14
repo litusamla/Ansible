@@ -16,10 +16,10 @@
     apt:
       name: git
       state: present
-    when: myfirsttask.stderr=""
+    when: myfirsttask.stderr==""
 
   - name: install git 
     apt:
       name: git
       state: present
-    when: myfirsttask.stderr!=""      
+    when: myfirsttask.stderr!==""      
