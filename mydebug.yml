@@ -11,3 +11,15 @@
   - name: i want to debug first result
     debug:
       msg: "{{myfirsttask}}"  
+
+  - name: install git 
+    apt:
+      name: git
+      state: present
+    when: myfirsttask.stderr=""
+
+  - name: install git 
+    apt:
+      name: git
+      state: present
+    when: myfirsttask.stderr!=""      
