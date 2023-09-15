@@ -18,7 +18,7 @@
     get_url:
        url: http://example.com/path/file.conf
        dest: /etc/foo.conf
-    force_basic_auth: yes
+       force_basic_auth: yes
 
 
 
