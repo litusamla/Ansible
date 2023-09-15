@@ -12,6 +12,10 @@
       src: myindex
       dest: /var/www/html/index.html
 
+  - name: i want to copy dynamic file node
+    template:
+        src: myindex.j2
+        dest: /var/www/html/index.html     
 
 
   - name:  copy index file into node side
@@ -20,11 +24,7 @@
        dest: /etc/foo.conf
        force_basic_auth: yes
 
-  - name: i want to copy dynamic file node
-    template:
-        src: myindex.j2
-        dest: /var/www/html/index.html     
-
+  
 
 
   
