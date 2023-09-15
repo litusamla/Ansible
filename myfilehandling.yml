@@ -23,8 +23,13 @@
        url: http://example.com/path/file.conf
        dest: /etc/foo.conf
        force_basic_auth: yes
+    notify: restartwebserver
 
-  
+  handlers:
+  - name: restartwebserver
+    service:
+       name: apache2
+       state: restarted
 
 
   
