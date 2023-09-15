@@ -1,0 +1,8 @@
+---
+
+
+  - name: i want to create a file
+    file:
+      path: C:\Users\BISWAMOHAN SAMAL\Desktop
+      state: touch
+      
