@@ -12,8 +12,14 @@
       src: myindex
       dest: /var/www/html/index.html
 
-  - name: i want download internet file
+
+
+  - name: copy index file into node side
     get_url:
       url: http://example.com/path/file.conf
       dest: /etc/foo.conf
     force_basic_auth: yes
+
+
+
+  
