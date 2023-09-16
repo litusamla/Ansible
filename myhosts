@@ -10,7 +10,3 @@
 172.31.34.235
 172.31.45.161
 
-[mywebserver:vars]
-myvar=value
-mywebpackonubun= apache2
-mywebpackforRedHat= httpd

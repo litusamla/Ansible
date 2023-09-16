@@ -1,2 +1,9 @@
 ---
+ - name: install
+    apt:
+      name: apache2
+      state: present
 # defaults file for mywebrole
+
+
+  
